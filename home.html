@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training</title>
+    <!-- CDN Styles and Scripts-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	
+	
+    <style>
+        body {
+            font-family: 'Bellota', cursive;
+        }
+	
+        
+        #slide{
+            top: 120px;
+            bottom: 10px;
+            background-size: contain;
+            position: fixed;
+            width: 100%;
+            height: 80%;
+			left: 200px;
+        }
+
+
+        .slide1{
+            background: url("images/m1.jpg") no-repeat center center fixed;
+        }
+
+        .slide2{
+            background: url("images/m2.jpg") no-repeat center center fixed;
+        }
+
+        .slide3{
+            background: url("images/m3.jpg") no-repeat center center fixed;
+        }
+
+        .slide4{
+            background: url("images/m4.jpg") no-repeat center center fixed;
+        }
+
+        .slide5{
+            background: url("images/m5.jpg") no-repeat center center fixed;
+        }
+
+        .slide6{
+            background: url("images/m6.jpg") no-repeat center center fixed;
+        }
+
+        .slide7{
+            background: url("images/m7.jpg") no-repeat center center fixed;
+        }
+
+        .slide8{
+            background: url("images/m8.jpg") no-repeat center center fixed;
+        }
+
+        .slide9{
+            background: url("images/m9.jpg") no-repeat center center fixed;
+        }
+
+#content_area h1{
+	color: burlywood;
+	font-size: 40px;
+}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>   
+
+<body>
+      <!-- Navbar with Search functionality-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Training</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a> 
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="reg.html">Sign Up</a>
+            <a class="dropdown-item" href="login.html">Login</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="index.html">Logout</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+        </ul>
+        
+    </div>
+    </nav>
+	<br>
+	<h1 class="text-center"> We Train You Better</h1>
+	<br>
+	<div id="content_area">
+	
+			 <div class="fadein">
+                <div id="slide" class="slide1"></div>
+                <div id="slide" class="slide2"></div>
+                <div id="slide" class="slide3"></div>
+                <div id="slide" class="slide4"></div>
+                <div id="slide" class="slide5"></div>
+                <div id="slide" class="slide6"></div>
+                <div id="slide" class="slide7"></div>
+                <div id="slide" class="slide8"></div>
+                <div id="slide" class="slide9"></div>
+               
+				
+				
+            </div>
+
+            <script>
+                
+                $(function(){
+                  $('.fadein div:gt(0)').hide();
+                  setInterval(function(){
+                    $('.fadein :first-child').fadeOut().next('div').fadeIn().end().appendTo('.fadein');
+                  }, 2300)
+                });
+
+            </script>
+     </div>
+	
+	 
+    <!-- CDN Scripts-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
